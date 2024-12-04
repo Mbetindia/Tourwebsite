@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------home section---------------------------------- */
+.main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img1.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-size: 1.2rem;
+}
+.topbar #logo{
+    display: flex;
+    justify-content: space-around;
+    width: 12%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+}
+.topbar>#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+#nav>a:hover{
+    color: rgb(63, 255, 223);
+    text-decoration: underline 2px solid greenyellow;
+}
+.bottombar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------------------------------about section---------------------------------- */
+.abtcenterbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.abtbottombar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 62vh;
+    font-size: 1.5rem;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 100vw;
+}
+.img{
+    height: 30vh;
+    width: 45vw;
+    border-radius: 5px;
+}
+.img:hover{
+    border: 2px solid white;
+}
+
+/* ---------------------------------booking section---------------------------------- */
+.bookmidbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    height: 90vh;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 100vw;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.form input{
+    border: 0;
+    width: 50vh;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: cursive;
+}
+
+.form label{
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15vh;
+}
+
+#submit{
+    background-color: aqua;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+#reset{
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+#submit:hover{
+    background-color: aquamarine;
+}
+
+#reset:hover{
+    background-color: tomato;
+    color: black;
+}
+
+/* ---------------------------------contact section---------------------------------- */
+.cntcrtbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    height: 90vh;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.cntbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 80vh;
+    width: 90%;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.cntbottom p{
+    font-size: 2rem;
+    font-weight: bold;
+    animation: call 1s infinite ease-out;
+    color: aqua;
+}
+
+@keyframes call {
+    0%{
+        scale: 0;
+    }
+    1%{
+        scale: 1.1;
+        color: yellow;
+    }
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    font-size: 1.5rem;
+}
+
+.footer p{
+    background-color: silver;
+    font-weight: bold;
+    color: black;
+    width: 100vw;
+    text-align: center;
+}
+
+/* ----------------------------------------responsive---------------------------------------------- */
+@media only screen and (min-width: 710px) and (max-width: 1060) {
+    .img{
+        height: 20vh;
+        width: 25vw;
+    }
+    .abtbottombar{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 548px) and (max-width: 709px) {
+    .img{
+        align-items: end;
+        height: 48vh;
+    }
+    .img{
+      height: 20vh;
+      width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 404px) and (max-width: 547px) {
+    .img2{
+       display: none;
+    }
+    .img3{
+        display: none;
+    }
+    .img{
+        height: 25vh;
+        width: 70vw;
+      }
+}
